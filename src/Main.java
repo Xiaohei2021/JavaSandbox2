@@ -8,7 +8,9 @@ public class Main {
         account.withdraw(60);
         account.deposit(500);
         account.status();
+        account.deposit(3);
+        account.withdraw(136);
+        account.status();
 
-        System.out.println("Hello world!");
     }
 }
