@@ -2,7 +2,7 @@ package accounts;
 
 public class Account {
     protected double balance;
-    private double interestRate;
+    protected double interestRate;
 
 //    public Account() {
 //        System.out.println("Account constructor");

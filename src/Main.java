@@ -1,5 +1,7 @@
 import accounts.*;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 //        Account account = new Account(100, 0.025);
@@ -56,6 +58,19 @@ public class Main {
         acc5.withdraw(90);
         //polymorphism-dynamic dispatch: a call to a method will be directed to underlying object's method.Java calls on object type, instead of variable type.
 
+        ArrayList<Account> accounts= new ArrayList<>();
+        accounts.add(new GoldCheckingAccount(500,0.168,3500));
+        accounts.add(new SavingsAccount(500,0.123));
+        accounts.add(new DiamondCheckingAccount(6000,0.236, 9000));
+        accounts.add(new SilverCheckingAccount(900, 0.123, 200));
+        accounts.add(new CheckingAccount(600,0.123, 200));
+        accounts.add(new DiamondCheckingAccount(900,0.126,605));
+        accounts.add(new GoldCheckingAccount(679, 0.123, 230));
+
+        for(Account account: accounts){
+            account.status();
+            System.out.println();
+        }
 
     }
 }

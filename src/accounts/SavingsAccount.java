@@ -17,4 +17,9 @@ public class SavingsAccount extends Account{
     public void deposit(double amount) {
         super.deposit(amount);
     }
+
+    @Override
+    public void status() {
+        System.out.printf("Saving's Account [Balance: %.2f| Interest Rate: %.2f]\n", balance, interestRate);
+    }
 }
