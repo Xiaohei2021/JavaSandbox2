@@ -1,6 +1,4 @@
-import accounts.Account;
-import accounts.CheckingAccount;
-import accounts.SavingsAccount;
+import accounts.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,13 +20,25 @@ public class Main {
 //        }
 //        System.out.println(account.getRewardPoints());
 
-        CheckingAccount ca = new CheckingAccount(1000, 0.0123, 500);
-        SavingsAccount sa = new SavingsAccount(1000, 0.0123);
+//        CheckingAccount ca = new CheckingAccount(1000, 0.0123, 500);
+//        SavingsAccount sa = new SavingsAccount(1000, 0.0123);
+//
+//        ca.withdraw(500);
+//        sa.withdraw(500);
+//
+//        ca.status();
+//        sa.status();
 
-        ca.withdraw(500);
-        sa.withdraw(500);
+        SilverCheckingAccount silver = new SilverCheckingAccount(600, 0.236, 900);
+        GoldCheckingAccount gold = new GoldCheckingAccount(600, 0.236, 900);
+        DiamondCheckingAccount rock = new DiamondCheckingAccount(600, 0.236, 900);
 
-        ca.status();
-        sa.status();
+        silver.purchase(500);
+        gold.purchase(500);
+        rock.purchase(500);
+
+        System.out.println(silver.getRewardPoints());
+        System.out.println(gold.getRewardPoints());
+        System.out.println(rock.getRewardPoints());
     }
 }

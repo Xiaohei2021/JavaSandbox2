@@ -12,4 +12,9 @@ public class SavingsAccount extends Account{
 
        return super.withdraw(amount);
     }
+
+    @Override
+    public void deposit(double amount) {
+        super.deposit(amount);
+    }
 }
