@@ -29,7 +29,7 @@ public class CheckingAccount extends Account {
     @Override
     public void status() {
         System.out.println(this.getClass().getSimpleName());
-        System.out.printf("\n\tAccount Balance: %.3f", balance);
+        System.out.printf("\tAccount Balance: %.3f", balance);
         System.out.printf("\n\tInterest Rate: %.3f",interestRate);
         System.out.printf("\n\tAccumulated Award Points: %d", rewardPoints);
     }
