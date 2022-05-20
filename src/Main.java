@@ -68,7 +68,9 @@ public class Main {
         accounts.add(new GoldCheckingAccount(679, 0.123, 230));
 
         for(Account account: accounts){
+
             account.status();
+            System.out.println();
             System.out.println();
         }
 

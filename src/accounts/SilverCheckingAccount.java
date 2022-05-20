@@ -9,4 +9,6 @@ public class SilverCheckingAccount extends CheckingAccount{
     public int calculateRewardPoints(double cost) {
         return (int)(cost * 25);
     }
+
+
 }
